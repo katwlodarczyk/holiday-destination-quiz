@@ -4,25 +4,55 @@ btn.addEventListener("click", holidayDestination);
 
 
 function holidayDestination() {
-    alert("Hello and welcome to the quiz! Answer a few simple questions and I will tell you your dream holiday destination!");
-    var name = prompt("Please enter your name to play!")
-    alert("Welcome to the game " + name + ". Get ready for your first question...")
-    var q1 = prompt("What is your favourite season? (spring, summer, autumn or winter?)")
-    var q3 = prompt("Do you live on planet Earth? (yes/no)")
+    const calculating = document.getElementById("calc")
+    const results = document.getElementById("results")
+    var q1Spring = document.getElementById("q1-spring")
+    var q1Summer = document.getElementById("q1-summer")
+    var q1Autumn = document.getElementById("q1-autumn")
+    var q1Winter = document.getElementById("q1-winter")
+    var q2Y = document.getElementById("q2-yes")
+    var q2N = document.getElementById("q2-no");
 
-    if (q1 == "spring" && q3 == "yes" || q1 == "summer" && q3 == "yes" || q1 == "winter" && q3 == "yes") {
-        alert("Calculating results....");
-        alert("Sorry, the planet Earth is in the middle of pandemic. Your holiday destination is your own home. Try next year!");
-    } else if (q1 == "autumn" && q3 == "yes") {
-        alert("Calculating results....");
-        alert("Hurray! Your dream holiday destination is your own home!");
+    if (q1Spring.checked == true && q2Y.checked == true || q1Summer.checked == true && q2Y.checked == true || q1Winter.checked == true && q2Y.checked == true) {
+        btn.classList.add("calculating")
+        btn.innerHTML = "Calculating...";
 
-    } else if ( q1 == "winter" && q3 == "no" ||  q1 == "autumn" && q3 == "no" ||  q1 == "summer" && q3 == "no" || q1 == "spring" && q3 == "no") {
-        alert("Calculating results....");
-        alert("Your dream holiday location is anywhere except the planet Earth!");
+        setTimeout(() => {
+            btn.classList.remove("calculating");
+            btn.classList.add("calculated")
+            btn.innerHTML = "Calculated";
+            results.innerHTML = "Sorry, the planet Earth is in the middle of pandemic. <br> Your holiday destination is your own home. <br> Try next year!";
+          }, 1500);
+        
+
+    } else if (q1Autumn.checked == true && q2Y.checked == true) {
+        btn.classList.add("calculating")
+        btn.innerHTML = "Calculating...";
+
+        setTimeout(() => {
+            btn.classList.remove("calculating");
+            btn.classList.add("calculated")
+            btn.innerHTML = "Calculated";
+            results.innerHTML = "Hurray! <br> Your dream holiday destination is your own home!";
+          }, 2000);
+        
+
+    } else if ( q1Spring.checked == true && q2N.checked == true ||
+                q1Summer.checked == true && q2N.checked == true ||
+                q1Autumn.checked == true && q2N.checked == true ||
+                q1Winter.checked == true && q2N.checked == true) {
+        
+        btn.classList.add("calculating")
+        btn.innerHTML = "Calculating...";
+
+        setTimeout(() => {
+            btn.classList.remove("calculating");
+            btn.classList.add("calculated")
+            btn.innerHTML = "Calculated";
+            results.innerHTML = "Your dream holiday location is anywhere <u>except</u> the planet Earth!";
+            }, 2000);
+    
     } else {
-        confirm("Invalid answers. Please try again.")
+        results.innerHTML = "Invalid answers. Please try again."
     };
 };
-
-// holidayDestination();

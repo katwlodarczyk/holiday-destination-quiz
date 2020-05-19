@@ -10,13 +10,14 @@ body{
 }
 
 .heading{
-    margin-top: 5%;
     padding-top: 5%;
     text-align: center;
     font-family: 'Homemade Apple', cursive;
     font-size: 35px;
 }
-
+a{
+    text-decoration: none;
+}
 .para{
     text-align: center;
 }
@@ -30,15 +31,15 @@ body{
     padding-bottom: 5%;
 }
 
-#start-btn{
+.start-btn{
     margin: 0 auto;
     justify-content: center;
     align-content: center;
     display: flex;
-    width: 10%;
+    width: 15%;
     height: 10%;
-    padding-top: 0.3%;
-    padding-bottom: 0.3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     font-size: 1.1em;
     border-radius: 20px;
     border-width: 0px;
@@ -46,10 +47,66 @@ body{
     color: white;
     cursor: pointer;
     transition: all 0.1s ease-out;
+    
 }
 
-#start-btn:hover{
+.start-btn:hover{
     background-color: rgb(102,160,107);
     box-shadow:  0px 5px 15px #333333;
     transform: scale(1.1);
+    text-decoration: none;
 }
+
+.start-btn:focus{
+    outline: none;
+}
+
+.questions{
+    margin-left: 5%;
+}
+
+#calc{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#results{
+    
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.social-media{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+ul.share-buttons{
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+ul.share-buttons li{
+    display: inline;
+    margin-right: 5%;
+    transition: 0.3s ease-in-out;
+}
+
+ul.share-buttons li:hover{
+    transform: scale(1.2);
+}
+
+  
+ul.share-buttons .sr-only{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
