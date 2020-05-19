@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Primary Meta Tags -->
     <title>Your dream holiday destination! - QUIZ</title>
     <meta name="title" content="Your dream holiday destination! - QUIZ">
@@ -25,8 +26,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Homemade+Apple&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    
 </head>
+
 <body>
     <div class="social-media">
         <ul class="share-buttons">
@@ -34,34 +35,16 @@
             <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&text=:%20https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="assets/twitter.svg" /></a></li>
             <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img alt="Pin it" src="assets/pinterest.svg" /></a></li>
             <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&title=&summary=&source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Share on LinkedIn" src="assets/linkedin.svg" /></a></li>
-          </ul>
+        </ul>
     </div>
     <section class="main-section">
         <h1 class="heading">Your dream holiday destination!</h1>
-        <div class="questions">
-        <h2 class="q-header">Question 1</h2>
-        <p class="q-body">What is your favourite season?</p>
-        <input type="radio" name="q1" id="q1-spring" value="">
-        <label for="q2-yes">Spring</label>
-        <input type="radio" name="q1" id="q1-summer" value="">
-        <label for="q2-no">Summer</label>
-        <input type="radio" name="q1" id="q1-autumn" value="">
-        <label for="q2-yes">Autumn</label>
-        <input type="radio" name="q1" id="q1-winter" value="">
-        <label for="q2-no">Winter</label>
-        <h2 class="q-header">Question 2</h2>
-        <p class="q-body">Do you live on planet Earth?</p>
-        <input type="radio" name="q2" id="q2-yes" value="Yes">
-        <label for="q2-yes">Yes</label>
-        <input type="radio" name="q2" id="q2-no" value="No">
-        <label for="q2-no">No</label>
-        </div>
-        <button onclick="holidayDestination()" id="start-btn" class="start-btn">Calculate</button>
-        <p id="calc"></p>
-        <p id="results"></p>
-        <img class="image" src="assets/image.svg" alt="decorative-image">        
+        <p class="para">Answer a few simple questions and I will tell you your holiday destination!</p>
+        <a href="qs-page.html"><button class="start-btn">START</button></a>
+        <img class="image" src="assets/image.svg" alt="decorative-image">
     </section>
-    
-<script src="main.js"></script>    
+
+    <script src="main.js"></script>
 </body>
+
 </html>
