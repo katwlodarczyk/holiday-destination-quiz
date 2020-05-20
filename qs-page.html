@@ -39,27 +39,47 @@
     </div>
     <section class="main-section">
         <h1 class="heading">Your dream holiday destination!</h1>
-        <div class="questions">
+        <div class="questions" id="qs">
+
         <h2 class="q-header">Question 1</h2>
         <p class="q-body">What is your favourite season?</p>
         <input type="radio" name="q1" id="q1-spring" value="">
-        <label for="q2-yes">Spring</label>
+        <label for="q1-spring">Spring</label>
         <input type="radio" name="q1" id="q1-summer" value="">
-        <label for="q2-no">Summer</label>
+        <label for="q1-summer">Summer</label>
         <input type="radio" name="q1" id="q1-autumn" value="">
-        <label for="q2-yes">Autumn</label>
+        <label for="q1-autumn">Autumn</label>
         <input type="radio" name="q1" id="q1-winter" value="">
-        <label for="q2-no">Winter</label>
+        <label for="q1-winter">Winter</label>
+
         <h2 class="q-header">Question 2</h2>
+        <p class="q-body">How woud you like to spend your time?</p>
+        <input type="radio" name="q2" id="q2-beach" value="">
+        <label for="q2-beach">Go to the beach</label>
+        <input type="radio" name="q2" id="q2-explore" value="">
+        <label for="q2-land">Explore landmarks</label>
+        <input type="radio" name="q2" id="q2-book" value="">
+        <label for="q2-book">Read a book</label>
+        <input type="radio" name="q2" id="q2-ski" value="">
+        <label for="q2-ski">Hit the slopes and ski</label>
+
+        <h2 class="q-header">Question 3</h2>
         <p class="q-body">Do you live on planet Earth?</p>
-        <input type="radio" name="q2" id="q2-yes" value="Yes">
-        <label for="q2-yes">Yes</label>
-        <input type="radio" name="q2" id="q2-no" value="No">
-        <label for="q2-no">No</label>
+        <input type="radio" name="q3" id="q3-yes" value="Yes">
+        <label for="q3-yes">Yes</label>
+        <input type="radio" name="q3" id="q3-no" value="No">
+        <label for="q3-no">No</label>
+
+        <h2 class="q-header">Question 4</h2>
+        <p class="q-body">What is your budget?</p>
+        <input type="range" name="budget" id="q4-budget" min="1" max="1000" class="slider" value=""><br>
+        <label for="q4-budget">Budget: <span id="value-number"></span> £</label>
+
         </div>
         <button onclick="holidayDestination()" id="start-btn" class="start-btn">Calculate</button>
         <p id="calc"></p>
         <p id="results"></p>
+        <button onclick="tryAgain()" id="again-button" style="display:none;" class="start-btn" >Play again!</button>
         <img class="image" src="assets/image.svg" alt="decorative-image">        
     </section>
     
