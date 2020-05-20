@@ -15,7 +15,6 @@ body{
     font-family: 'Homemade Apple', cursive;
     font-size: 35px;
 }
-
 .para{
     text-align: center;
 }
@@ -31,6 +30,7 @@ body{
 
 .start-btn{
     margin: 0 auto;
+    margin-top: 3%;
     justify-content: center;
     align-content: center;
     display: flex;
@@ -108,3 +108,71 @@ ul.share-buttons .sr-only{
     width: 1px;
     overflow: hidden;
   }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 50%; /* Full-width */
+    height: 16px; /* Specified height */
+    border-radius: 5px;
+    background: #696969; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%; 
+    background: rgb(102,160,107); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: rgb(102,160,107); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+#again-button{
+    background-color: rgb(102,160,107);
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-animation-name: changecolour; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: changecolour;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes changecolour {
+    0% {color: white;}
+    50% {color: black;}
+    100% {color: white;}
+}
+
+/* Standard syntax */
+@keyframes changecolour {
+   0% {color: white;}
+    50% {color: black;}
+    100% {color: white;}
+}
