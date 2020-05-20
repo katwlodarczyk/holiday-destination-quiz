@@ -29,52 +29,92 @@
     
 </head>
 <body>
-    <div class="social-media">
-        <ul class="share-buttons">
-            <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&quote=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="assets/facebook.svg" /></a></li>
-            <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&text=:%20https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="assets/twitter.svg" /></a></li>
-            <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img alt="Pin it" src="assets/pinterest.svg" /></a></li>
-            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&title=&summary=&source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img alt="Share on LinkedIn" src="assets/linkedin.svg" /></a></li>
-          </ul>
-    </div>
+    <section class="social-section">
+        <div class="social-media">
+            <h4 class="share-heading">SHARE WITH FRIENDS! </h4>
+            <ul class="share-buttons">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&quote="
+                        class="icon" title="Share on Facebook" target="_blank"
+                        onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img
+                            alt="Share on Facebook" src="assets/facebook.svg" /></a></li>
+                <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&text=:%20https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F"
+                        class="icon" target="_blank" title="Tweet"
+                        onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img
+                            alt="Tweet" src="assets/twitter.svg" /></a></li>
+                <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&description="
+                        class="icon" target="_blank" title="Pin it"
+                        onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img
+                            alt="Pin it" src="assets/pinterest.svg" /></a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&title=&summary=&source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F"
+                        class="icon" target="_blank" title="Share on LinkedIn"
+                        onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img
+                            alt="Share on LinkedIn" src="assets/linkedin.svg" /></a></li>
+            </ul>
+        </div>
+    </section>  
     <section class="main-section">
         <h1 class="heading">Your dream holiday destination!</h1>
         <div class="questions" id="qs">
 
         <h2 class="q-header">Question 1</h2>
         <p class="q-body">What is your favourite season?</p>
-        <input type="radio" name="q1" id="q1-spring" value="">
-        <label for="q1-spring">Spring</label>
-        <input type="radio" name="q1" id="q1-summer" value="">
-        <label for="q1-summer">Summer</label>
-        <input type="radio" name="q1" id="q1-autumn" value="">
-        <label for="q1-autumn">Autumn</label>
-        <input type="radio" name="q1" id="q1-winter" value="">
-        <label for="q1-winter">Winter</label>
-
+        <span class="answers">
+            <label for="q1-spring">
+                <input type="radio" name="q1" id="q1-spring" value="">
+                Spring
+            </label>
+            <label for="q1-summer">
+                <input type="radio" name="q1" id="q1-summer" value="">
+                Summer
+            </label>
+            <label for="q1-autumn">
+                <input type="radio" name="q1" id="q1-autumn" value="">
+                Autumn
+            </label>
+            <label for="q1-winter">
+                <input type="radio" name="q1" id="q1-winter" value="">
+                Winter
+            </label>
+        </span>
         <h2 class="q-header">Question 2</h2>
         <p class="q-body">How woud you like to spend your time?</p>
-        <input type="radio" name="q2" id="q2-beach" value="">
-        <label for="q2-beach">Go to the beach</label>
-        <input type="radio" name="q2" id="q2-explore" value="">
-        <label for="q2-land">Explore landmarks</label>
-        <input type="radio" name="q2" id="q2-book" value="">
-        <label for="q2-book">Read a book</label>
-        <input type="radio" name="q2" id="q2-ski" value="">
-        <label for="q2-ski">Hit the slopes and ski</label>
-
+        <span class="answers">
+            <label for="q2-beach">
+                <input type="radio" name="q2" id="q2-beach" value="">
+                Go to the beach
+            </label>
+            <label for="q2-land">
+                <input type="radio" name="q2" id="q2-explore" value="">
+                Explore landmarks
+            </label>
+            <label for="q2-book">
+                <input type="radio" name="q2" id="q2-book" value="">
+                Read a book
+            </label>
+            <label for="q2-ski">
+                <input type="radio" name="q2" id="q2-ski" value="">
+                Hit the slopes and ski
+            </label>
+        </span>
         <h2 class="q-header">Question 3</h2>
         <p class="q-body">Do you live on planet Earth?</p>
-        <input type="radio" name="q3" id="q3-yes" value="Yes">
-        <label for="q3-yes">Yes</label>
-        <input type="radio" name="q3" id="q3-no" value="No">
-        <label for="q3-no">No</label>
+        <span class="answers">
+            <label for="q3-yes">
+                <input type="radio" name="q3" id="q3-yes" value="Yes">
+                Yes
+            </label>
+            <label for="q3-no">
+                <input type="radio" name="q3" id="q3-no" value="No">
+                No
+            </label>
+        </span>
 
         <h2 class="q-header">Question 4</h2>
         <p class="q-body">What is your budget?</p>
-        <input type="range" name="budget" id="q4-budget" min="1" max="1000" class="slider" value=""><br>
-        <label for="q4-budget">Budget: <span id="value-number"></span> £</label>
-
+        <span class="answers">
+            <input type="range" name="budget" id="q4-budget" min="1" max="1000" class="slider" value=""><br>
+            <label for="q4-budget">Budget: <span id="value-number"></span> £</label>
+        </span>
         </div>
         <button onclick="holidayDestination()" id="start-btn" class="start-btn">Calculate</button>
         <p id="calc"></p>
@@ -82,7 +122,14 @@
         <button onclick="tryAgain()" id="again-button" style="display:none;" class="start-btn" >Play again!</button>
         <img class="image" src="assets/image.svg" alt="decorative-image">        
     </section>
-    
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="footer">
+            <p class="foot">
+                Created by Kat Wlodarczyk © Copyright <span id="year"></span>. All rights reserved.
+            </p>
+        </div>
+    </section>
 <script src="main.js"></script>    
 </body>
 </html>
