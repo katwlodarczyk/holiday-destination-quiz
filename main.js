@@ -79,3 +79,11 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
+
+// AUTOMATIC DATE UPDATE FOR FOOTER
+
+const footerYear = document.getElementById("year");
+const date = new Date();
+const year = date.getFullYear();
+
+footerYear.innerText = year;
