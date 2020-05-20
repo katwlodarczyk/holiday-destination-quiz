@@ -1,15 +1,29 @@
 body{
     font-family: 'Cormorant', serif;
-    font-size: 20px;;
+    font-size: 20px;
+    background-color: rgba(228,197,168, 0.5);
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    width: 100%;
+}
+
+.social-section{
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 1%;
+    margin: 0 auto;
 }
 
 .main-section{
-    background-color: rgba(228,197,168, 0.5);
     margin-left: 15%;
     margin-right: 15%;
 }
 
 .heading{
+    margin-top: 0;
     padding-top: 5%;
     text-align: center;
     font-family: 'Homemade Apple', cursive;
@@ -59,8 +73,8 @@ body{
     outline: none;
 }
 
-.questions{
-    margin-left: 5%;
+label{
+    display:block;
 }
 
 #calc{
@@ -73,24 +87,32 @@ body{
     text-align: center;
     font-size: 1.5em;
 }
+.share-heading{
+    margin-right: 3%;
+}
 
 .social-media{
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: flex; 
+    vertical-align: middle;
 }
 
 ul.share-buttons{
     list-style: none;
     padding: 0;
-    display: flex;
+    display: inline-flex;
   }
   
 ul.share-buttons li{
     display: inline;
     margin-right: 5%;
     transition: 0.3s ease-in-out;
+}
+
+.icon {
+    vertical-align: middle;
 }
 
 ul.share-buttons li:hover{
@@ -107,72 +129,152 @@ ul.share-buttons .sr-only{
     height: 1px;
     width: 1px;
     overflow: hidden;
-  }
-  
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
+    }
+
+.slider {
+    -webkit-appearance: none;  
     appearance: none;
-    width: 50%; /* Full-width */
-    height: 16px; /* Specified height */
+    width: 50%; 
+    height: 16px; 
     border-radius: 5px;
-    background: #696969; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    background: #696969; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
     transition: opacity .2s;
-  }
-  
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 25px; 
+    height: 25px; 
     border-radius: 50%; 
-    background: rgb(102,160,107); /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    background: rgb(102,160,107); 
+    cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
     border-radius: 50%;
-    background: rgb(102,160,107); /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+    background: rgb(102,160,107);
+    cursor: pointer; 
+}
 
 #again-button{
     background-color: rgb(102,160,107);
-    -webkit-transition-duration: 1s; /* Safari */
+    -webkit-transition-duration: 1s; 
     transition-duration: 1s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-    -webkit-animation-name: changecolour; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
-     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: changecolour; 
+    -webkit-animation-duration: 1.5s; 
+    -webkit-animation-iteration-count: infinite; 
     animation-name: changecolour;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
-
-  /* Safari 4.0 - 8.0 */
 @-webkit-keyframes changecolour {
     0% {color: white;}
     50% {color: black;}
     100% {color: white;}
 }
 
-/* Standard syntax */
+
 @keyframes changecolour {
    0% {color: white;}
     50% {color: black;}
     100% {color: white;}
+}
+
+.answers{
+    display: block;
+}
+
+#footer {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    border-top: 1px solid rgb(87, 87, 87);
+}
+
+.footer{
+    width: 80%;
+    margin-left: 2%;
+}
+
+/* MEDIA QUERIES */
+
+/* LARGE SCREENS */
+@media (max-width: 1166px){
+    .share-buttons{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:848px){
+    .heading{
+        font-size: 32px;
+    }
+
+    .image{
+        max-width: 70%;
+        margin-top: 10%;
+    }
+    .start-btn{
+        margin-top: 10%;
+        width: 27%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+}
+@media (max-width: 500px){
+    .heading{
+        font-size: 25px;
+    }
+    .start-btn{
+        width: 35%;
+    }
+    .social-media{
+        width: 70%;
+        display: block;
+        margin-left: 26%;
+    }
+    .share-heading{
+        margin: 0;
+    }
+    .share-buttons{
+        margin: 0;
+    }
+    .image{
+        max-width: 80%;
+    }
+    .questions{
+        
+    }
+}
+
+@media (max-width: 382px){
+    .image{
+        max-width: 100%;
+        margin-top: 15%;
+    }
+    .social-media{
+        margin-left: 20%;
+    }
+    .main-section{
+        margin: 5%;
+    }
+    .start-btn{
+        margin-top: 15%;
+        width: 45%;
+    }
 }
