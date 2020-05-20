@@ -28,33 +28,45 @@
 </head>
 
 <body>
-    <div class="social-media">
-        <ul class="share-buttons">
-            <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&quote="
-                    title="Share on Facebook" target="_blank"
-                    onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img
-                        alt="Share on Facebook" src="assets/facebook.svg" /></a></li>
-            <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&text=:%20https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F"
-                    target="_blank" title="Tweet"
-                    onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img
-                        alt="Tweet" src="assets/twitter.svg" /></a></li>
-            <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&description="
-                    target="_blank" title="Pin it"
-                    onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img
-                        alt="Pin it" src="assets/pinterest.svg" /></a></li>
-            <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&title=&summary=&source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F"
-                    target="_blank" title="Share on LinkedIn"
-                    onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img
-                        alt="Share on LinkedIn" src="assets/linkedin.svg" /></a></li>
-        </ul>
+    <section class="social-section">
+        <div class="social-media">
+            <h4 class="share-heading">SHARE WITH FRIENDS! </h4>
+            <ul class="share-buttons">
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&quote="
+                        class="icon" title="Share on Facebook" target="_blank"
+                        onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&quote=' + encodeURIComponent(document.URL)); return false;"><img
+                            alt="Share on Facebook" src="assets/facebook.svg" /></a></li>
+                <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&text=:%20https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F"
+                        class="icon" target="_blank" title="Tweet"
+                        onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img
+                            alt="Tweet" src="assets/twitter.svg" /></a></li>
+                <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&description="
+                        class="icon" target="_blank" title="Pin it"
+                        onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img
+                            alt="Pin it" src="assets/pinterest.svg" /></a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F&title=&summary=&source=https%3A%2F%2Fkatwlodarczyk.github.io%2Fholiday-destination-quiz%2F"
+                        class="icon" target="_blank" title="Share on LinkedIn"
+                        onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><img
+                            alt="Share on LinkedIn" src="assets/linkedin.svg" /></a></li>
+            </ul>
+        </div>
+    </section>  
+    <div class="main-container">
+        <section class="main-section">
+            <h1 class="heading">Your dream holiday destination!</h1>
+            <p class="para">Answer a few simple questions and I will tell you your holiday destination!</p>
+            <a href="qs-page.html"><button class="start-btn">START</button></a>
+            <img class="image" src="assets/image.svg" alt="decorative-image">
+        </section>
     </div>
-    <section class="main-section">
-        <h1 class="heading">Your dream holiday destination!</h1>
-        <p class="para">Answer a few simple questions and I will tell you your holiday destination!</p>
-        <a href="qs-page.html"><button class="start-btn">START</button></a>
-        <img class="image" src="assets/image.svg" alt="decorative-image">
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="footer">
+            <p class="foot">
+                Created by Kat Wlodarczyk © Copyright <span id="year"></span>. All rights reserved.
+            </p>
+        </div>
     </section>
-
     <script src="main.js"></script>
 </body>
 
